@@ -64,7 +64,7 @@ carousel {
       background-repeat: no-repeat;
       background-size: cover;
       height: 530px;
-      li{
+      li {
         height: 15px;
         width: 16px;
         background-image: url(../../img/Ellipse3.png);
@@ -123,6 +123,43 @@ carousel {
           height: 66.13px;
           width: 45.71px;
           margin-left: 140px;
+        }
+      }
+    }
+  }
+}
+
+.productFeature {
+  .container {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      .col {
+        width: calc(100% / 3);
+        height: 369px;
+        background-color: black;
+        // margin-right: 30px;
+        .item {
+          width: 100%;
+          .itemImg {
+            img {
+              width: 100%;
+            }
+          }
+          .itemInfo {
+            h4 {
+            }
+            span {
+            }
+          }
+          .calltoaction {
+            button {
+            }
+            .priceItem {
+              .span {
+              }
+            }
+          }
         }
       }
     }

@@ -126,4 +126,20 @@ carousel .container .carousel button .carousel-control-next-icon {
   height: 66.13px;
   width: 45.71px;
   margin-left: 140px;
+}
+
+.productFeature .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.productFeature .container .row .col {
+  width: 33.3333333333%;
+  height: 369px;
+  background-color: black;
+}
+.productFeature .container .row .col .item {
+  width: 100%;
+}
+.productFeature .container .row .col .item .itemImg img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

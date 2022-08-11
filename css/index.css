@@ -1,0 +1,129 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.header {
+  height: 50px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+}
+.header .container .nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .nav-bar .user-direct a {
+  margin-right: 10px;
+  font-size: 16px;
+  display: inline-block;
+  color: #f8f8f8;
+  font-weight: 300;
+}
+
+carousel .container .frame-route {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+carousel .container .frame-route a {
+  color: #000000;
+  margin-right: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.5s;
+  position: relative;
+}
+carousel .container .frame-route a::after {
+  content: "";
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  left: 0;
+  transition: all 0.5s;
+}
+carousel .container .frame-route a:hover::after {
+  width: 100%;
+}
+carousel .container .carousel {
+  background-image: url(../../img/image6.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 530px;
+}
+carousel .container .carousel li {
+  height: 15px;
+  width: 16px;
+  background-image: url(../../img/Ellipse3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  margin-bottom: 80px;
+  margin-right: 30px;
+}
+carousel .container .carousel .carousel-inner .carousel-item img {
+  margin-left: 86px;
+}
+carousel .container .carousel .carousel-inner .carousel-item .prodInfo {
+  margin-top: 102px;
+  transform: translateX(-150px);
+  float: right;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+carousel .container .carousel .carousel-inner .carousel-item .prodInfo .productName {
+  font-size: 40px;
+  font-weight: 300;
+}
+carousel .container .carousel .carousel-inner .carousel-item .prodInfo .productDescription {
+  font-size: 20px;
+  font-weight: 300;
+}
+carousel .container .carousel .carousel-inner .carousel-item .prodInfo a {
+  cursor: pointer;
+}
+carousel .container .carousel .carousel-inner .carousel-item .prodInfo a button {
+  height: 64px;
+  width: 175px;
+  background-color: #e1b067;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 200;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 300;
+}
+carousel .container .carousel button .carousel-control-prev-icon {
+  background-image: url(../../img/Polygon2.png);
+  height: 66.13px;
+  width: 45.71px;
+  margin-right: 140px;
+}
+carousel .container .carousel button .carousel-control-next-icon {
+  background-image: url(../../img/Polygon1.png);
+  height: 66.13px;
+  width: 45.71px;
+  margin-left: 140px;
+}/*# sourceMappingURL=index.css.map */

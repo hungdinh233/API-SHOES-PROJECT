@@ -1,15 +1,15 @@
 //font size
-$fs: 16px;
-$fs-x: 20px;
-$fs-sm: 24px;
-$fs-md: 30px;
-$fs-lg: 40px;
+$default: 16px;
+$small: 20px;
+$medium: 24px;
+$big: 30px;
+$bigger: 40px;
 
 // font weight
-$fw: 200;
-$fw-sm: 300;
-$fw-md: 400;
-$fw-lg: 600;
+$thin: 200;
+$light: 300;
+$bold: 400;
+$bolder: 600;
 //color
 $pri: #f8f8f8;
 $scd: #000000;
@@ -27,7 +27,7 @@ $thd: #e1b067;
   display: flex;
   align-items: center;
 }
-
+//buynow button
 @mixin buyNow {
   height: 64px;
   width: 175px;
@@ -35,4 +35,16 @@ $thd: #e1b067;
   color: #000000;
   font-size: 24px;
   font-weight: 200;
+}
+// footer link
+@mixin footername {
+  font-size: $small;
+  font-weight: $bolder;
+ 
+}
+
+@mixin footerlink {
+  font-size: $default;
+  font-weight: $light;
+  
 }

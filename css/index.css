@@ -16,6 +16,133 @@ a {
   transition: all 0.5s;
 }
 
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.header {
+  height: 50px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+}
+.header .container .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .nav-bar .user-direct a {
+  margin-right: 10px;
+  font-size: 16px;
+  display: inline-block;
+  color: #f8f8f8;
+  font-weight: 24px;
+}
+
+carousel .container .frame-route {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+carousel .container .frame-route a {
+  color: #000000;
+  margin-right: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 0.5s;
+  position: relative;
+}
+carousel .container .frame-route a::after {
+  content: "";
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  left: 0;
+  transition: all 0.5s;
+}
+carousel .container .frame-route a:hover::after {
+  width: 100%;
+}
+
+.detail__product .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail__product .container .img__prod img {
+  width: 300px;
+}
+.detail__product .container .info__prod .prod__name {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+.detail__product .container .info__prod .prod__desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: #cbc9c9;
+  padding-bottom: 20px;
+}
+.detail__product .container .info__prod .available__size {
+  color: #1ed90e;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.detail__product .container .info__prod .size__option a .box-size {
+  background-color: #cbc9c9;
+  color: #000000;
+  font-weight: 600;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+.detail__product .container .info__prod .price {
+  color: #fc0303;
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.detail__product .container .info__prod .quantity button {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+  color: #fffcfc;
+  border: none;
+}
+.detail__product .container .info__prod .quantity span {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 10px;
+}
+.detail__product .container .info__prod a .add__to__cart {
+  width: 175px;
+  height: 64px;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  color: #fffcfc;
+  border: none;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .header {
   height: 50px;
   background: #000000;

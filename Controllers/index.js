@@ -28,7 +28,7 @@ renderFeature = (data) => {
       </div>
 
       <div class="action__btn">
-          <a href="##">
+          <a href="./detail.html?productId=${showedProd.id}">
             <div class="buy__now">
               <span>Buy now</span>
             </div>

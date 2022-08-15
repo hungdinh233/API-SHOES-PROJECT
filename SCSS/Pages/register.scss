@@ -1,0 +1,142 @@
+@import "../BaseSetUp/base.scss";
+@import "../Themes/variables";
+
+.register {
+  margin-bottom: 100px;
+  .container {
+    // h1 {
+    // }
+
+    .container {
+      @media screen and (max-width: 414px) {
+        padding-left: 30px;
+      }
+      padding-left: 60px; /***/
+
+      .form {
+        @media screen and (max-width: 428px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col-6 {
+          @media screen and (max-width: 428px) {
+            width: 100%;
+            font-size: 16px;
+          }
+          input {
+            border-bottom: 5px solid $base;
+            outline: none;
+            border-top: hidden;
+            border-right: hidden;
+            border-left: hidden;
+            height: 90px;
+            font-size: $big;
+            font-weight: $bold;
+            padding-top: 40px;
+          }
+          .show1 {
+            width: 20px;
+            height: 20px;
+          }
+          .show2 {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .gender {
+          @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+              
+          }
+          @media screen and (max-width: 428px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+          
+          }
+          height: 90px;
+          font-size: $big;
+          font-weight: $bold;
+          display: flex;
+          align-items: flex-end;
+
+          input {
+            width: 50px;
+            transform: translateY(20%);
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+              width: 55px;
+              height: 55px;
+              border-radius: 100px;
+              top: 15px;
+              left: -1px;
+              position: relative;
+              background-color: #d1d3d1;
+              content: "";
+              display: inline-block;
+              visibility: visible;
+              border: none;
+            }
+            &:checked::after {
+              @media screen and (max-width: 768px) {
+                width: 40px;
+                height: 40px;
+              }
+              content: "";
+              width: 37px;
+              height: 37px;
+              border-radius: 100px;
+              position: relative;
+              background-color: $base;
+              display: inline-block;
+              visibility: visible;
+              top: -43px;
+              right: -8px;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .submit {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        margin-right: 0px;
+
+        a {
+          button {
+            @media screen and (max-width: 1440px) {
+              margin-right: 330px;
+            }
+            @media screen and (max-width: 1280px) {
+              margin-right: 300px;
+            }
+            @media screen and (max-width: 1024px) {
+              margin-right: 200px;
+            }
+            @media screen and (max-width: 768px) {
+              margin-right: 70px;
+            }
+            @media screen and (max-width: 375px) {
+              transform: translateX(10%);
+            }
+            width: 291px;
+            height: 50px;
+            color: #ffffff;
+            background: $base;
+            font-size: $big;
+            font-weight: $bold;
+          }
+        }
+      }
+    }
+  }
+}

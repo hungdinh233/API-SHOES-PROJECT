@@ -1,0 +1,161 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.register {
+  margin-bottom: 100px;
+}
+.register .container .container {
+  padding-left: 60px; /***/
+}
+@media screen and (max-width: 414px) {
+  .register .container .container {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .register .container .container .form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 428px) {
+  .register .container .container .form .col-6 {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+.register .container .container .form .col-6 input {
+  border-bottom: 5px solid #ae18e2;
+  outline: none;
+  border-top: hidden;
+  border-right: hidden;
+  border-left: hidden;
+  height: 90px;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.register .container .container .form .col-6 .show1 {
+  width: 20px;
+  height: 20px;
+}
+.register .container .container .form .col-6 .show2 {
+  width: 20px;
+  height: 20px;
+}
+.register .container .container .form .gender {
+  height: 90px;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .register .container .container .form .gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .register .container .container .form .gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+.register .container .container .form .gender input {
+  width: 50px;
+  transform: translateY(20%);
+  position: relative;
+  cursor: pointer;
+}
+.register .container .container .form .gender input::before {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  top: 15px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: none;
+}
+.register .container .container .form .gender input:checked::after {
+  content: "";
+  width: 37px;
+  height: 37px;
+  border-radius: 100px;
+  position: relative;
+  background-color: #ae18e2;
+  display: inline-block;
+  visibility: visible;
+  top: -43px;
+  right: -8px;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .register .container .container .form .gender input:checked::after {
+    width: 40px;
+    height: 40px;
+  }
+}
+.register .container .container .submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-right: 0px;
+}
+.register .container .container .submit a button {
+  width: 291px;
+  height: 50px;
+  color: #ffffff;
+  background: #ae18e2;
+  font-size: 30px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1440px) {
+  .register .container .container .submit a button {
+    margin-right: 330px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .register .container .container .submit a button {
+    margin-right: 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .register .container .container .submit a button {
+    margin-right: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .register .container .container .submit a button {
+    margin-right: 70px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .register .container .container .submit a button {
+    transform: translateX(10%);
+  }
+}/*# sourceMappingURL=register.css.map */

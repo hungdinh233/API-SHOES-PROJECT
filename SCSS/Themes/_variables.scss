@@ -14,9 +14,11 @@ $bolder: 600;
 $pri: #f8f8f8;
 $scd: #000000;
 $thd: #e1b067;
+$base: #ae18e2;
+
 
 // background
-@mixin background() {
+  @mixin background() {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,11 +42,9 @@ $thd: #e1b067;
 @mixin footername {
   font-size: $small;
   font-weight: $bolder;
- 
 }
 
 @mixin footerlink {
   font-size: $default;
   font-weight: $light;
-  
 }

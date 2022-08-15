@@ -1,7 +1,7 @@
 //Render sản phẩm đc lấy params từ trang index
 renderDetailProd = (prodObject) => {
   let html = `
-        <div class="img__prod col-4 ms-5">
+        <div class="img__prod col-4">
         <img src=${prodObject.image} alt="" />
       </div>
       <div class="info__prod col-6 d-flex flex-column">

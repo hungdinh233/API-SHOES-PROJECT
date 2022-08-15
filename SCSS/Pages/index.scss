@@ -27,6 +27,7 @@
 
 carousel {
   .container {
+    padding-left: 15px;
     .frame-route {
       height: 75px;
       @include flex();

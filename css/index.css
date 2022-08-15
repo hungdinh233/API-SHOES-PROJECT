@@ -169,7 +169,6 @@ carousel .container .frame-route {
 }
 carousel .container .frame-route a {
   color: #000000;
-  margin-right: 24px;
   font-size: 16px;
   font-weight: 300;
   transition: all 0.5s;
@@ -318,14 +317,11 @@ carousel .container .carousel .carousel-inner .carousel-item .prodInfo a button 
 }
 carousel .container .carousel button .carousel-control-prev-icon {
   background-image: url(../../img/Polygon2.png);
-  height: 66.13px;
-  width: 45.71px;
   margin-right: 80px;
 }
 carousel .container .carousel button .carousel-control-next-icon {
   background-image: url(../../img/Polygon1.png);
-  height: 66.13px;
-  width: 45.71px;
+  width: 0%;
   margin-left: 80px;
 }
 
@@ -333,7 +329,7 @@ carousel .container .carousel button .carousel-control-next-icon {
   margin: 30px 0;
 }
 .product__feature .container .row {
-  padding: 0 30px;
+  margin: 0;
 }
 .product__feature .container .row .col-4 {
   height: 369px;
@@ -366,11 +362,6 @@ carousel .container .carousel button .carousel-control-next-icon {
   flex-direction: column;
   align-items: flex-start;
   height: 145px;
-}
-.product__feature .container .row .col-4 .item .product__info .prod__name {
-  font-size: 24px;
-  font-weight: 300;
-  padding-top: 40px;
 }
 .product__feature .container .row .col-4 .item .product__info .prod__desc {
   font-size: 16px;
@@ -418,19 +409,17 @@ carousel .container .carousel button .carousel-control-next-icon {
 }
 @media screen and (max-width: 768px) {
   .footer .footer__top .container {
-    padding: 30px 0px;
+    padding: 30px 30px;
   }
 }
 @media screen and (max-width: 414px) {
   .footer .footer__top .container {
-    padding-right: 30px;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 375px) {
   .footer .footer__top .container {
-    padding-right: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -454,15 +443,16 @@ carousel .container .carousel button .carousel-control-next-icon {
 @media screen and (max-width: 414px) {
   .footer .footer__top .container ul {
     border-right: none;
-    font-size: 18px;
     margin-top: 20px;
+    width: 100%;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 375px) {
   .footer .footer__top .container ul {
     width: 100%;
-    padding-right: 10px;
     margin-top: 30px;
+    padding-left: 0;
   }
 }
 .footer .footer__top .container ul a {
@@ -510,7 +500,7 @@ carousel .container .carousel button .carousel-control-next-icon {
 }
 @media screen and (max-width: 768px) {
   .footer .footer__bottom .container {
-    padding: 30px 0px;
+    padding: 30px 30px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -546,15 +536,16 @@ carousel .container .carousel button .carousel-control-next-icon {
 @media screen and (max-width: 414px) {
   .footer .footer__bottom .container ul {
     border-right: none;
-    font-size: 18px;
+    width: 100%;
     margin-top: 20px;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 375px) {
   .footer .footer__bottom .container ul {
     width: 100%;
-    padding-right: 10px;
     margin-top: 30px;
+    padding-left: 0;
   }
 }
 .footer .footer__bottom .container ul a {

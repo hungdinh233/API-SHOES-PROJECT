@@ -32,7 +32,6 @@ carousel {
       @include flex();
       a {
         color: $scd;
-        margin-right: 24px;
         font-size: $default;
         font-weight: $light;
         transition: all 0.5s;
@@ -167,14 +166,15 @@ carousel {
       button {
         .carousel-control-prev-icon {
           background-image: url(../../img/Polygon2.png);
-          height: 66.13px;
-          width: 45.71px;
+          // height: 66.13px;
+          // width: 45.71px;
           margin-right: 80px;
         }
         .carousel-control-next-icon {
           background-image: url(../../img/Polygon1.png);
-          height: 66.13px;
-          width: 45.71px;
+          // height: 66.13px;
+          // width: 45.71px;
+          width: 0%;
           margin-left: 80px;
         }
       }
@@ -189,7 +189,7 @@ carousel {
       margin: 30px 0;
     }
     .row {
-      padding: 0 30px;
+      margin: 0;
       .col-4 {
         @media screen and (max-width: 768px) {
           width: 50%;
@@ -217,11 +217,11 @@ carousel {
             flex-direction: column;
             align-items: flex-start;
             height: 145px;
-            .prod__name {
-              font-size: $medium;
-              font-weight: $light;
-              padding-top: 40px;
-            }
+            // .prod__name {
+            //   font-size: $medium;
+            //   font-weight: $light;
+            //   padding-top: 40px;
+            // }
 
             .prod__desc {
               font-size: $default;
@@ -271,15 +271,15 @@ carousel {
   .footer__top {
     .container {
       @media screen and (max-width: 768px) {
-        padding: 30px 0px;
+        padding: 30px 30px;
       }
       @media screen and (max-width: 414px) {
-        padding-right: 30px;
+        // padding-right: 30px;
         display: flex;
         flex-direction: column;
       }
       @media screen and (max-width: 375px) {
-        padding-right: 20px;
+        // padding-right: 20px;
         display: flex;
         flex-direction: column;
       }
@@ -298,13 +298,14 @@ carousel {
         }
         @media screen and (max-width: 414px) {
           border-right: none;
-          font-size: 18px;
           margin-top: 20px;
+          width: 100%;
+          padding-left: 0;
         }
         @media screen and (max-width: 375px) {
           width: 100%;
-          padding-right: 10px;
           margin-top: 30px;
+          padding-left: 0;
         }
 
         @include footername();
@@ -351,7 +352,7 @@ carousel {
 
     .container {
       @media screen and (max-width: 768px) {
-        padding: 30px 0px;
+        padding: 30px 30px;
       }
       @media screen and (max-width: 414px) {
         padding-right: 30px;
@@ -377,13 +378,16 @@ carousel {
         }
         @media screen and (max-width: 414px) {
           border-right: none;
-          font-size: 18px;
+          width: 100%;
           margin-top: 20px;
+          padding-left: 0;
+
         }
         @media screen and (max-width: 375px) {
           width: 100%;
-          padding-right: 10px;
           margin-top: 30px;
+          padding-left: 0;
+
         }
         @include footername();
         display: flex;
